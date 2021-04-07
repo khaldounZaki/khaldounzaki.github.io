@@ -257,7 +257,7 @@
         if (OnFlag == false){
           OnFlag = true;
           firebase.database().ref().child("remoteControl").update({"ROn":true});
-          window.setTimeout("remoteControlON()" , 2000);
+          window.setTimeout("remoteControlON()" , 5000);
         }
         else{
           OnFlag = false;
@@ -270,7 +270,7 @@
         if (OffFlag == false){
           OffFlag = true;
           firebase.database().ref().child("remoteControl").update({"ROff":true});
-          window.setTimeout("remoteControlOFF()" , 2000);
+          window.setTimeout("remoteControlOFF()" , 5000);
         }
         else{
           OffFlag = false;
@@ -283,7 +283,7 @@
         if (ResetFlag == false){
           ResetFlag = true;
           firebase.database().ref().child("remoteControl").update({"RReset":true});
-          window.setTimeout("remoteControlReset()" , 2000);
+          window.setTimeout("remoteControlReset()" , 5000);
         }
         else{
           ResetFlag = false;
